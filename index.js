@@ -30,3 +30,28 @@ function operadormetodo() {
 }
 
 operadormetodo();
+
+
+// modificacion de mensaje ejerciio 2
+
+
+ function modificacion(){
+
+
+        // Definir los mensajes inicial y modificado
+        const mensajeInicial = ["Hola", "a", "todos", "los", "estudiantes", "de", "programación", "de", "4to", "C"];
+        const mensajeModificado = mensajeInicial.slice(); // Crear una copia del mensaje inicial
+    
+        // Modificar el mensaje modificado utilizando splice
+        mensajeModificado.splice(0, 2, "Somos", "nosotros");
+        mensajeModificado.splice(7, 3, "los", "mejores");
+      
+    
+        // Mostrar los mensajes en alertas
+        alert("Mensaje Inicial:\n" + mensajeInicial.join(" "));
+        alert("Mensaje Modificado:\n" + mensajeModificado.join(" "));
+    }
+    
+    // Llamar a la función para mostrar los mensajes
+    mostrarMensajes();  
+    
